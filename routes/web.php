@@ -9,7 +9,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index']);
 
 // Route::get('/', function () {
-//     return view('index');
+//     return view('pages.index');
 // });
 
 Route::get('/dashboard', function () {
