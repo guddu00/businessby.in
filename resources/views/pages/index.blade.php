@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Business Buy</title>
+
   @include('include.css')
 </head>
 <body>
@@ -34,7 +36,7 @@
   <!------- End location-wise listing section ------->
 
   <!------- Start all service tab section ------->
-  @include('include.all-service-tab')
+  @include('include.all-services-tab')
   <!------- End all service tab section ------->
 
   <!--------- Start showcase section ----------->
