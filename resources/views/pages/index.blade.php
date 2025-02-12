@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Business Buy</title>
+
   @include('include.css')
 </head>
 <body>
