@@ -5,7 +5,7 @@
                   <h3 class="w-100 text-center pb-2">Start From 51%</h3>
             </div>
             <div class="row d-flex flex-wrap justify-content-center">
-                  <a href="buy-business.php" class="buy-busi"><span class="blink-hard">Buy Business</span></a>
+                  <a href="{{url('/buy-business')}}" class="buy-busi"><span class="blink-hard">Buy Business</span></a>
             </div>
       </div>
 </section>

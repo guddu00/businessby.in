@@ -24,7 +24,7 @@
                                                      <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
                                                      <li class="nav-item"><a class="nav-link" href="{{ url('/buy-business') }}">Buy Business</a></li>
                                                      <li class="nav-item"><a class="nav-link" href="{{ url('/about-us') }}">About Us</a></li>
-                                                     <li class="nav-item"><a class="nav-link" href="{{ url('/contact-us') }}">Contact Us</a></li>
+                                                     <li class="nav-item"><a class="nav-link" href="{{ url('/contact_us') }}">Contact Us</a></li>
                                                  </ul>
                                            </div>
                                        </div>
