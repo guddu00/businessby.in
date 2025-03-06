@@ -9,28 +9,59 @@
 <body class="bg-gray-100">
     <div class="flex min-h-screen">
         <!-- Sidebar -->
-        <div id="sidebar" class="w-64 bg-gray-200 text-black p-5 flex flex-col h-screen">
-            <div class="flex flex-col items-center mt-6">
-                <img src="https://businessbuy.in/images/logo.png" alt="Logo" class="w-24 h-auto">
+            <div id="sidebar" class="w-64 bg-gray-200 text-black p-5 flex flex-col h-screen">
+                <div class="flex flex-col items-center mt-6">
+                    <img src="https://businessbuy.in/images/logo.png" alt="Logo" class="w-24 h-auto">
+                </div>
+                <nav class="mt-6 font-sans">
+                    <ul class="text-lg font-bold flex flex-col space-y-2 text-center">
+                        <li class="w-full p-4 hover:bg-blue-400 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">Commercial Listing</a></li>
+                        <li class="w-full p-4 hover:bg-blue-400 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">Business Setup</a></li>
+                        <li class="w-full p-4 hover:bg-blue-400 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">Business Valuation</a></li>
+                        <li class="w-full p-4 hover:bg-blue-400 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">IT Consultancy</a></li>
+                        <li class="w-full p-4 hover:bg-blue-400 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">Business Advisory</a></li>
+                        <li class="w-full p-4 hover:bg-blue-400 hover:rounded-lg transition duration-300 hover:text-white"><a href="/admin/categories">Add Business Categories</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="mt-6 font-sans">
-                <ul class="text-lg font-bold flex flex-col space-y-2 text-center">
-                    <li class="w-full p-4 hover:bg-blue-500 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">Commercial Listing</a></li>
-                    <li class="w-full p-4 hover:bg-blue-500 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">Business Setup</a></li>
-                    <li class="w-full p-4 hover:bg-blue-500 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">Business Valuation</a></li>
-                    <li class="w-full p-4 hover:bg-blue-500 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">IT Consultancy</a></li>
-                    <li class="w-full p-4 hover:bg-blue-500 hover:rounded-lg transition duration-300 hover:text-white"><a href="#">Business Advisory</a></li>
-                    <li class="w-full p-4 hover:bg-blue-500 hover:rounded-lg transition duration-300 hover:text-white"><a href="/admin/categories">Add Business Categories</a></li>
-                </ul>
-            </nav>
-        </div>
         
         <!-- Main Content -->
-        <div class="flex-1 flex flex-col bg-gray-100">
+        <div class="flex-1 flex flex-col bg-blue-500 text-white py-4 px-6 shadow-md">
             <!-- Top Navbar -->
-            <nav class="bg-white p-4 shadow flex justify-between bg-opacity-10 items-center">
+            <nav class=" text-2xl font-bold bg-white p-4 shadow flex justify-between bg-opacity-10 items-center container mx-auto ">
                 <button id="menuBtn" class="text-gray-900 text-2xl">&#9776;</button>
                 {{-- <button id="darkModeToggle" class="bg-gray-900 text-white px-4 py-2 rounded">Dark Mode</button> --}}
+
+                <!--navbar-->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-gray-300">Home</a>
+                    <a href="#" class="hover:text-gray-300">Categories</a>
+                    <a href="#" class="hover:text-gray-300">Contact Us</a>
+                    <a href="#" class="hover:text-gray-300">Edit</a>
+                    <a href="#" class="hover:text-gray-300">Profile</a>
+                    <a href="#" class="hover:text-gray-300">Signup</a>
+                </nav>
+                 
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class=" md:hidden bg-blue-600 py-4 px-6 flex flex-col space-y-2">
+        <a href="#home" class="hover:text-gray-300">Home</a>
+        <a href="#categories" class="hover:text-gray-300">Categories</a>
+        <a href="#contact_us" class="hover:text-gray-300">Contact Us</a>
+        <a href="#" class="hover:text-gray-300">Profile</a>
+        <a href="#" class="hover:text-gray-300">Signup</a>
+        <button id="closeMenu" class="text-white text-xl mt-2">&#10006;</button>
+    </div>
+</header>
+
+<script>
+    document.getElementById("menuToggle").addEventListener("click", function() {
+        document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+
+    document.getElementById("closeMenu").addEventListener("click", function() {
+        document.getElementById("mobileMenu").classList.add("hidden");
+    });
+</script>
 
                 <div class="relative">
                     <div class="flex space-x-4 items-center">
@@ -41,7 +72,7 @@
                     </div>
         
                     <div id="submenu" class="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden z-50">
-                        <ul class="text-gray-700">
+                        <ul class="text-gray-700 cursor-pointer">
                             <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Profile</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Settings</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Logout</a></li>
@@ -70,7 +101,7 @@
             </nav>
             
             <!-- Dashboard Content -->
-            <body class="bg-gray-100">
+            <body class="bg-gray-100 text-white">
                 <main id="content" class="transition-all duration-300 ease-in-out">
                     <section class="relative hero h-screen flex flex-col items-center justify-center text-center text-white" 
     style="
@@ -82,7 +113,7 @@
         height: 100vh;
     ">
                         
-                        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-white text-opacity-80 uppercase text-center" 
+                        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 shadow-lg shadow-blue-500/50 rounded-lg bg-blue-400 text-black p-4 text-opacity-80 uppercase text-center" 
                         >
                         WELCOME TO ADMIN PANEL
                     </h1>
@@ -114,13 +145,13 @@
             
             
                             <!-- Dashboard Cards -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 ">
                                 
                                 <!-- Total Users -->
                                 <a href="/signupdetails" class="block">
-                                    <div class="bg-white shadow-lg rounded-2xl p-6 flex items-center justify-between text-gray-800 bg-opacity-70 w-72 mx-auto transition-transform transform hover:scale-105">
+                                    <div class="bg-white shadow-lg rounded-2xl p-6 flex items-center justify-between text-gray-800 bg-opacity-70 w-72 mx-auto transition-transform transform hover:scale-105 ">
                                         <div>
-                                            <h3 class="text-gray-500 text-lg font-medium">Total Users</h3>
+                                            <h3 class="text-gray-500 text-lg font-medium ">Total Users</h3>
                                             <p class="text-3xl font-bold text-orange-600">12,345</p>
                                         </div>
                                         <div class="bg-orange-100 p-4 rounded-full">
