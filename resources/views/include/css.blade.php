@@ -8,3 +8,4 @@
 <link rel="stylesheet" href="{{asset('css/slick.css')}}">
 <link rel="stylesheet" href="{{asset('css/slick-theme.css')}}">
 <link rel="stylesheet" href="{{asset('css/conversion.css')}}">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />

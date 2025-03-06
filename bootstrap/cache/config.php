@@ -17,7 +17,7 @@
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
     'cipher' => 'AES-256-CBC',
-    'key' => 'base64:ownsnEHtIgTCv3E39PZUGtso2AfNmBPcjwMhypplIA0=',
+    'key' => 'base64:Z8x+lvFzETKcTMc/0aRhI9Aip7vc/aLdthb6ABxEBuk=',
     'previous_keys' => 
     array (
     ),
@@ -158,8 +158,8 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\framework/cache/data',
-        'lock_path' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\framework/cache/data',
+        'path' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\framework/cache/data',
+        'lock_path' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -331,7 +331,7 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\app/private',
+        'root' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\app/private',
         'serve' => true,
         'throw' => false,
         'report' => false,
@@ -339,7 +339,7 @@
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\app/public',
+        'root' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
         'throw' => false,
@@ -361,7 +361,7 @@
     ),
     'links' => 
     array (
-      'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\public\\storage' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\app/public',
+      'C:\\Users\\91987\\Desktop\\business\\businessby.in\\public\\storage' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\app/public',
     ),
   ),
   'logging' => 
@@ -386,14 +386,14 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\logs/laravel.log',
         'level' => 'debug',
         'replace_placeholders' => true,
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
         'replace_placeholders' => true,
@@ -458,7 +458,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -534,7 +534,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\resources\\views/vendor/mail',
+        0 => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -625,11 +625,11 @@
   ),
   'session' => 
   array (
-    'driver' => 'database',
+    'driver' => 'file',
     'lifetime' => 120,
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\framework/sessions',
+    'files' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -755,9 +755,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\resources\\views',
+      0 => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\resources\\views',
     ),
-    'compiled' => 'C:\\Users\\awant\\OneDrive\\Desktop\\Bussiness.com\\businessby.in\\storage\\framework\\views',
+    'compiled' => 'C:\\Users\\91987\\Desktop\\business\\businessby.in\\storage\\framework\\views',
   ),
   'flasher' => 
   array (
